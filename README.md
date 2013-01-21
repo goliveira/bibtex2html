@@ -23,6 +23,6 @@ or
 
 ## License
 
-Author: Copyright (C) 2009 Gustavo de Oliveira
+Copyright (C) 2009 Gustavo de Oliveira
 
-License: GPL
+Licensed under the GPL

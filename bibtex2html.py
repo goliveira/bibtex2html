@@ -2,8 +2,8 @@
 
 
 """
-Author: (C) 2009 Gustavo de Oliveira
-License: GPL
+Copyright (C) 2009 Gustavo de Oliveira
+Licensed under the GPL
 
 This program reads a bibtex file and convert it to a list of references
 (articles, books etc.) in html format. To run it one needs a template file
