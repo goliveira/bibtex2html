@@ -1,6 +1,4 @@
-Author: Copyright (C) 2009 Gustavo de Oliveira
-
-License: GPL
+# Bibtex2html
 
 This program reads a bibtex file and convert it to a list of references
 (articles, books etc.) in html format. To run it one needs a template file
@@ -22,3 +20,9 @@ To run this program type:
 or
 
     python bibtex2html.py bibtex.bib template.html > output.html
+
+## License
+
+Author: Copyright (C) 2009 Gustavo de Oliveira
+
+License: GPL
