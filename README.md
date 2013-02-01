@@ -1,8 +1,11 @@
 # Bibtex2html
 
 This program reads a bibtex file and convert it to a list of references
-(articles, books etc.) in html format. To run it one needs a template file
-containing the following fields:
+(articles, books etc.) in HTML format.
+
+## Usage
+
+To use this program you need a template file containing the following fields:
 
     <!--NUMBER_OF_REFERENCES-->
     <!--NEWER-->
@@ -13,7 +16,7 @@ containing the following fields:
 These fields will be replaced by the program, and the result will be printed
 out to the standard output.
 
-To run this program type:
+To run type:
 
     python bibtex2html.py bibtex.bib template.html
 
@@ -23,6 +26,4 @@ or
 
 ## License
 
-Copyright (C) 2009 Gustavo de Oliveira
-
-Licensed under the GPL
+Copyright (C) 2009 Gustavo de Oliveira. Licensed under the GPL.
