@@ -28,4 +28,4 @@ or
 ## License
 
 Copyright (C) 2009-2015 Gustavo de Oliveira. Licensed under the GPL (see the
-[license](LICENSE.md) file).
+[license](LICENSE.txt) file).
