@@ -1,11 +1,12 @@
 # Bibtex2html
 
 This program reads a bibtex file and convert it to a list of references
-(articles, books etc.) in HTML format.
+in HTML format.
 
 ## Usage
 
-To use this program you need a template file containing the following fields:
+To use this program you need a template file containing the following
+placeholders:
 
     <!--NUMBER_OF_REFERENCES-->
     <!--NEWER-->
@@ -26,4 +27,5 @@ or
 
 ## License
 
-Copyright (C) 2009 Gustavo de Oliveira. Licensed under the GPL.
+Copyright (C) 2009-2015 Gustavo de Oliveira. Licensed under the GPL (see the
+[license](LICENSE.md) file).
