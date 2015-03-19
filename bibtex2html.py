@@ -2,12 +2,20 @@
 
 
 """
-Copyright (C) 2009 Gustavo de Oliveira
-Licensed under the GPL
+Copyright (C) 2009-2015 Gustavo de Oliveira. Licensed under the GPL (see the
+license file).
 
-This program reads a bibtex file and convert it to a list of references
-(articles, books etc.) in html format. To run it one needs a template file
-containing the following fields:
+This program reads a BibTeX file and converts it to a list of references in
+HTML format.
+
+To use this program you need Python installed on your computer.
+
+To run the program, in a command-line interface enter the command
+
+    python bibtex2html.py bibtex.bib template.html output.html
+
+Here, `bibtex.bib` is the BibTeX file that you want to convert, and
+`template.html` is any template file containing the following placeholders:
 
     <!--NUMBER_OF_REFERENCES-->
     <!--NEWER-->
@@ -15,14 +23,8 @@ containing the following fields:
     <!--DATE-->
     <!--LIST_OF_REFERENCES-->
 
-These fields will be replaced by the program, and the result will be printed
-out to the standard output.
-
-To run this program type:
-
-    python bibtex2html.py bibtex.bib template.html
-or
-    python bibtex2html.py bibtex.bib template.html > output.html
+These placeholders will be replaced by the program, and the result will be
+written to the file `output.html`.
 """
 
 
@@ -82,12 +84,13 @@ def cleanup_page(s):
 
 
 
-# Get the BibTeX and template file names
+# Get the BibTeX, template, and output file names
 bibfile = sys.argv[1]
 templatefile = sys.argv[2]
+outputfile = sys.argv[3]
 
 
-# Open, read and close the files
+# Open, read and close the BivTeX and template files
 with open(templatefile, 'r') as f:
     template = f.read()
 
@@ -231,5 +234,6 @@ a = a.replace('<!--DATE-->', date.today().strftime('%d %b %Y'))
 final = a + html + b
 
 
-# Print the final result to the standard output
-print final
+# Write the final result to the output file
+with open(outputfile, 'w') as f:
+    f.write(final)
