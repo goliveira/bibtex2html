@@ -1,18 +1,18 @@
-#! /usr/bin/env python2
+#! /usr/bin/env python
 
 
 """
-Copyright (C) 2009-2015 Gustavo de Oliveira. Licensed under the GPL (see the
+Copyright (C) 2009-2020 Gustavo de Oliveira. Licensed under the GPL (see the
 license file).
 
 This program reads a BibTeX file and converts it to a list of references in
 HTML format.
 
-To use this program you need Python installed on your computer.
+To use this program you need Python 3 installed on your computer.
 
 To run the program, in a command-line interface enter the command
 
-    python bibtex2html.py bibtex.bib template.html output.html
+    python bibtex2html.py example.bib template.html output.html
 
 Here, `bibtex.bib` is the BibTeX file that you want to convert, and
 `template.html` is any template file containing the following placeholders:
@@ -48,7 +48,7 @@ def cleanup_author(s):
     '\\~A': '&Atilde;', '\\~o': '&otilde;', '\\~O': '&Otilde;', 
     '.': ' ', "\\'\\": '', '{': '', '}': '', ' And ': ' and '}
 
-    for k, v in dictionary.iteritems():
+    for k, v in dictionary.items():
         s = s.replace(k, v)
 
     s = s.strip()
