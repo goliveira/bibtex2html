@@ -32,9 +32,9 @@ Alternatively, the command
 
     python bibtex2html.py example.bib template.html
 
-prints the result to the standard output.
+prints the resulting HTML code to the standard output.
     
 ## License
 
 Copyright (C) 2009-2020 Gustavo de Oliveira. Licensed under the GPL
-(see the [license](LICENSE.txt) file).
+([license.txt](LICENSE.txt)).
