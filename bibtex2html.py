@@ -2,20 +2,30 @@
 
 
 """
-Copyright (C) 2009-2020 Gustavo de Oliveira. Licensed under the GPL (see the
-license file).
+Copyright (C) 2009-2020 Gustavo de Oliveira.
+Licensed under the GPL (see the license file).
 
-This program reads a BibTeX file and converts it to a list of references in
-HTML format.
+https://github.com/goliveira/bibtex2html
 
-To use this program you need Python 3 installed on your computer.
 
-To run the program, in a command-line interface enter the command
+Bibtex2html reads a BibTeX file and converts it to a list of
+references in HTML format.
+
+## File description
+
+* `bibtex2html.py`: the bibtex2html program
+* `example.bib`: example of BibTeX file
+* `template.html`: example of template file
+
+## Usage
+
+To run the program, execute the following command in a terminal:
 
     python bibtex2html.py example.bib template.html output.html
 
 Here, `bibtex.bib` is the BibTeX file that you want to convert, and
-`template.html` is any template file containing the following placeholders:
+`template.html` is any template file containing the following
+placeholders:
 
     <!--NUMBER_OF_REFERENCES-->
     <!--NEWER-->
@@ -23,8 +33,14 @@ Here, `bibtex.bib` is the BibTeX file that you want to convert, and
     <!--DATE-->
     <!--LIST_OF_REFERENCES-->
 
-These placeholders will be replaced by the program, and the result will be
-written to the file `output.html`.
+These placeholders will be replaced by the program, and the result
+will be written to the file `output.html`.
+
+Alternatively, the command
+
+    python bibtex2html.py example.bib template.html
+
+prints the result to the standard output.
 """
 
 
@@ -85,9 +101,16 @@ def cleanup_page(s):
 
 
 # Get the BibTeX, template, and output file names
-bibfile = sys.argv[1]
-templatefile = sys.argv[2]
-outputfile = sys.argv[3]
+if len(sys.argv) < 3:
+    sys.exit("Error: Invalid command.")
+else:
+    bibfile = sys.argv[1]
+    templatefile = sys.argv[2]
+    if len(sys.argv) == 4:
+        print_to_stdout = 0
+        outputfile = sys.argv[3]
+    elif len(sys.argv) == 3:
+        print_to_stdout = 1
 
 
 # Open, read and close the BivTeX and template files
@@ -234,6 +257,9 @@ a = a.replace('<!--DATE-->', date.today().strftime('%d %b %Y'))
 final = a + html + b
 
 
-# Write the final result to the output file
-with open(outputfile, 'w') as f:
-    f.write(final)
+# Write the final result to the output file or to stdout
+if print_to_stdout == 0:
+    with open(outputfile, 'w') as f:
+        f.write(final)
+else:
+    print(final)
