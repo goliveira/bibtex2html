@@ -2,8 +2,8 @@
 
 
 """
-Copyright (C) 2009-2020 Gustavo de Oliveira.
-Licensed under the GPL (see the license file).
+Copyright (C) 2009-2021 Gustavo de Oliveira.
+Licensed under the GPL (see License.txt).
 
 https://github.com/goliveira/bibtex2html
 

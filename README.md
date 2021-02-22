@@ -36,5 +36,5 @@ prints the resulting HTML code to the standard output.
     
 ## License
 
-Copyright (C) 2009-2020 Gustavo de Oliveira. Licensed under the GPL
-([license.txt](LICENSE.txt)).
+Copyright (C) 2009-2021 Gustavo de Oliveira. Licensed under the GPL
+([License](LICENSE.txt)).
