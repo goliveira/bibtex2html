@@ -1,7 +1,6 @@
 # Bibtex2html
 
-Bibtex2html reads a BibTeX file and converts it to a list of
-references in HTML format.
+Bibtex2html reads a BibTeX file and converts it to a list of references in HTML format.
 
 ## File description
 
@@ -15,9 +14,7 @@ To run the program, execute the following command in a terminal:
 
     python bibtex2html.py example.bib template.html output.html
 
-Here, `bibtex.bib` is the BibTeX file that you want to convert, and
-`template.html` is any template file containing the following
-placeholders:
+Here, `bibtex.bib` is the BibTeX file that you want to convert, and `template.html` is any template file containing the following placeholders:
 
     <!--NUMBER_OF_REFERENCES-->
     <!--NEWER-->
@@ -25,8 +22,7 @@ placeholders:
     <!--DATE-->
     <!--LIST_OF_REFERENCES-->
 
-These placeholders will be replaced by the program, and the result
-will be written to the file `output.html`.
+These placeholders will be replaced by the program, and the result will be written to the file `output.html`.
 
 Alternatively, the command
 
@@ -36,5 +32,5 @@ prints the resulting HTML code to the standard output.
     
 ## License
 
-Copyright (C) 2009-2021 Gustavo de Oliveira. Licensed under the
-[GNU GPL](LICENSE).
+Copyright (C) 2009-2021 Gustavo de Oliveira.
+Licensed under the [GNU GPL](LICENSE).
