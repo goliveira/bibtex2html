@@ -3,7 +3,7 @@
 
 """
 Copyright (C) 2009-2021 Gustavo de Oliveira.
-Licensed under the GPL (see License.txt).
+Licensed under the GNU GPL (see License).
 
 https://github.com/goliveira/bibtex2html
 
