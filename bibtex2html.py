@@ -3,7 +3,7 @@
 
 """
 Copyright (C) 2009-2021 Gustavo de Oliveira.
-Licensed under the GNU GPL (see License).
+Licensed under the GNU GPLv2 (see License).
 
 https://github.com/goliveira/bibtex2html
 
@@ -200,11 +200,9 @@ older = years[0]
 newer = years[-1]
 
 
-###########################################################################
 # Set the fields to be exported to html (following this order)
 mandatory = ['author', 'title']
 optional = ['journal', 'eprint', 'volume', 'pages', 'year', 'url', 'doi']
-###########################################################################
 
 
 # Clean up data
