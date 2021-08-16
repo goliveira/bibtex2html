@@ -24,12 +24,10 @@ Here, `bibtex.bib` is the BibTeX file that you want to convert, and `template.ht
 
 These placeholders will be replaced by the program, and the result will be written to the file `output.html`.
 
-Alternatively, the command
+Alternatively, the following command prints the resulting HTML code to the standard output:
 
     python bibtex2html.py example.bib template.html
 
-prints the resulting HTML code to the standard output.
-    
 ## License
 
 Copyright (C) 2009-2021 Gustavo de Oliveira. Licensed under the [GNU GPLv2](LICENSE).
