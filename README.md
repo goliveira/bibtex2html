@@ -1,6 +1,6 @@
 # Bibtex2html
 
-Bibtex2html is a command line application that reads a BibTeX file and converts it to a list of references in HTML format.
+Bibtex2html is a command line program that reads a BibTeX file and converts it to a list of references in HTML format.
 
 ## File description
 
