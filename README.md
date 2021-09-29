@@ -1,6 +1,6 @@
 # Bibtex2html
 
-Reads a BibTeX file and converts it to a list of references in HTML format.
+Bibtex2html is a command line application that reads a BibTeX file and converts it to a list of references in HTML format.
 
 ## File description
 
@@ -10,7 +10,7 @@ Reads a BibTeX file and converts it to a list of references in HTML format.
 
 ## Usage
 
-To run the program, execute the following command in a terminal:
+To run the program, execute the following command:
 
     python bibtex2html.py example.bib template.html output.html
 
