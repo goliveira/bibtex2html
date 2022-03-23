@@ -1,6 +1,6 @@
 # Bibtex2html
 
-Bibtex2html is a command line program that reads a BibTeX file and converts it to a list of references in HTML format.
+Bibtex2html reads a BibTeX file and converts it to a list of references in HTML format.
 
 ## File description
 
@@ -22,7 +22,7 @@ Here, `bibtex.bib` is the BibTeX file that you want to convert and `template.htm
     <!--DATE-->
     <!--LIST_OF_REFERENCES-->
 
-These placeholders will be replaced by the program, and the result will be written to the file `output.html`.
+The placeholders will be replaced by the program, and the result will be written to the file `output.html`.
 
 Alternatively, the following command prints the resulting HTML code to the standard output:
 
@@ -30,4 +30,4 @@ Alternatively, the following command prints the resulting HTML code to the stand
 
 ## License
 
-Copyright (C) 2009-2021 Gustavo de Oliveira. Licensed under the [GNU GPLv2](LICENSE).
+Copyright (C) 2009-2022 Gustavo de Oliveira. Licensed under the [GNU GPLv2](LICENSE).
