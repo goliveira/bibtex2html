@@ -145,6 +145,10 @@ for s in biblist:
     s = s.rpartition('}')[0]
     keylist = ['type = ' + type.lower(), 'id = ' + id]
 
+    # Uncomment for debugging
+    #print(keylist)
+    #print(s)
+
     number = 0
     flag = 0
     i = 0
