@@ -113,7 +113,7 @@ else:
         print_to_stdout = 1
 
 
-# Open, read and close the BivTeX and template files
+# Open, read and close the BibTeX and template files
 with open(templatefile, 'r') as f:
     template = f.read()
 
