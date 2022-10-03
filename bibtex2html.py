@@ -152,11 +152,19 @@ for s in biblist:
     number = 0
     flag = 0
     i = 0
+    separator = 'empty'
     while len(s) > 0:
-        if s[i] == '{':
+        if number == 0 and separator == 'empty' and s[i] == '{':
             number += 1
             flag = 1
-        elif s[i] == '}':
+            separator = 'bracket'
+        elif number == 0 and separator == 'empty' and s[i] == '"':
+            number += 1
+            flag = 1
+            separator = 'quote'
+        elif number == 1 and separator == 'bracket' and s[i] == '}':
+            number -= 1
+        elif number == 1 and separator == 'quote' and s[i] == '"':
             number -= 1
 
         if number == 0 and flag == 1:
@@ -164,6 +172,7 @@ for s in biblist:
             s = s[i+1:]
             flag = 0
             i = 0
+            separator = 'empty'
             continue
 
         i += 1
@@ -180,7 +189,7 @@ for l in listlist:
         key, sep, value = s.partition('=')
         key = key.strip(' ,\n\t{}')
         key = key.lower()
-        value = value.strip(' ,\n\t{}')
+        value = value.strip(' ,\n\t{}"')
         keydict[key] = value
 
     dictlist.append(keydict)
