@@ -39,7 +39,7 @@ Alternatively, the following command prints the resulting HTML code to the stand
 
 ## Changelog
 
-* Add support to field names inclosed in " " (in addition to { }).
+* Add support to field names inclosed in " " (in addition to { }). (Thanks to Ümit Sözbilir.)
 
 ## License
 
