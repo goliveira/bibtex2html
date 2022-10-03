@@ -28,6 +28,19 @@ Alternatively, the following command prints the resulting HTML code to the stand
 
     python bibtex2html.py example.bib template.html
 
+## References
+
+* https://www.bibtex.com/g/bibtex-format/
+
+## Todo
+
+* Add support to case insensitive field names (see https://www.bibtex.com/g/bibtex-format/#fields).
+* Add support to plain numbers (not inclosed in { } or " ").
+
+## Changelog
+
+* Add support to field names inclosed in " " (in addition to { }).
+
 ## License
 
 Copyright (C) 2009-2022 Gustavo de Oliveira. Licensed under the [GNU GPLv2](LICENSE).
