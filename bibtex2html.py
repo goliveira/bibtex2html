@@ -199,6 +199,14 @@ for l in listlist:
 # Backup all the original data
 dictlist_bkp = copy.deepcopy(dictlist)
 
+
+# Lower case of all keys in dictionaries
+dictlist = []
+for d in dictlist_bkp:
+    dlower = {k:v for (k,v) in d.items()}
+    dictlist.append(dlower)
+
+
 # Keep only articles in the list
 dictlist = [d for d in dictlist if d['type'] == 'article']
 # keep only articles that have author and title

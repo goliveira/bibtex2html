@@ -34,12 +34,12 @@ Alternatively, the following command prints the resulting HTML code to the stand
 
 ## Todo
 
-* Add support to case insensitive field names (see https://www.bibtex.com/g/bibtex-format/#fields).
-* Add support to plain numbers (not inclosed in { } or " ").
+* Add support to plain numbers not inclosed in { } or " ".
 
 ## Changelog
 
-* Add support to field names inclosed in " " (in addition to { }). (Thanks to Ümit Sözbilir.)
+* Add support to case insensitive field names.
+* Add support to field names inclosed in " " in addition to { } (thanks to Ümit Sözbilir).
 
 ## License
 
