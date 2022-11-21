@@ -45,6 +45,7 @@ prints the result to the standard output.
 
 
 import sys
+import copy
 from datetime import date
 
 
@@ -196,8 +197,7 @@ for l in listlist:
 
 
 # Backup all the original data
-full_dictlist = dictlist
-
+dictlist_bkp = copy.deepcopy(dictlist)
 
 # Keep only articles in the list
 dictlist = [d for d in dictlist if d['type'] == 'article']
